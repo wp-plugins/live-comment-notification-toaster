@@ -6,9 +6,11 @@ Tested up to: 4.1
 Stable tag: 1.0.0
 License: GPLv2 or later
 
-Description: Live comment notification plugin can enable the admin to install a live notification toaster to notify all online customers whenever any comment is made by any online customer.
+This plugin can enable the admin to install a live notification toaster to notify all online customers whenever any comment is made by any online customer.
 
 == Description ==
+Live comment notification plugin can enable the admin to install a live notification toaster to notify all online customers whenever any comment is made by any online customer. 
+
 1. We can have live notification toaster if any user will comment on any content of blog.
 2. Comment moderation must be off to work this plugin well.
 3. If moderation is on then we can have only notification from registered user's comments.
