@@ -6,7 +6,7 @@ Tested up to: 4.1
 Stable tag: 1.0.0
 License: GPLv2 or later
 
-This plugin can enable the admin to install a live notification toaster to notify all online customers whenever any comment is made by any online customer.
+This plugin can enable the admin to install a live notification toaster to notify all online users whenever any comment is made by any online user.
 
 == Description ==
 Live comment notification plugin can enable the admin to install a live notification toaster to notify all online customers whenever any comment is made by any online customer. 
