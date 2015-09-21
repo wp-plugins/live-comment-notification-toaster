@@ -3,7 +3,7 @@
 Plugin Name: Live comments notification
 Plugin URI: 
 Description: We can have toaster notification if comment is posted on some post.
-Version: 1.0.0
+Version: 1.0.1
 Text Domain: toast_notification
 Author: biztechc
 Author URI: https://profiles.wordpress.org/biztechc/
