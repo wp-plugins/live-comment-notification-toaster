@@ -2,8 +2,8 @@
 Contributors: biztechc
 Tags: comment,notification,live comment,comment notification,comment toatser,user,user comment,user notification,WP Comments notification,live notification WP Comments,wordpress comment,wordpress notification,wordpress live notification,wordpress comment notification
 Requires at least: 3.7
-Tested up to: 4.3
-Stable tag: 1.0.0
+Tested up to: 4.3.1
+Stable tag: 1.0.1
 License: GPLv2 or later
 
 This plugin can enable the admin to install a live notification toaster to notify all online users whenever any comment is made by any online user.
@@ -38,6 +38,8 @@ Live comment notification plugin can enable the admin to install a live notifica
 
 
 == Changelog ==
+= 1.0.1 =
+* Fixes bug for extra calls if plugin was diactivate.
 = 1.0.0 =
 * First release.
 
