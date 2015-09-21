@@ -39,7 +39,7 @@ Live comment notification plugin can enable the admin to install a live notifica
 
 == Changelog ==
 = 1.0.1 =
-* Fixes bug for extra calls if plugin was diactivate.
+* Fixes bug for extra calls if plugin was deactivate.
 = 1.0.0 =
 * First release.
 
