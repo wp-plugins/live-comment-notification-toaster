@@ -44,8 +44,9 @@ function uninstall_taoster_notification()
 add_action( 'wp_footer', 'bc_ajax_call',1 ); 
 function bc_ajax_call()
 { 
-    $time_d= get_option('default_toast_time')*1000; ?>
- 
+    $time_d= get_option('default_toast_time')*1000;
+    $enable=get_option('toast_enable');
+    if($enable==1){?>
    <script type="text/javascript" >
    var interval_id=0;
    var toast_flag=1;
@@ -69,6 +70,7 @@ jQuery(window).focus(function() {
     </script>
     <input type="hidden" name="default_toast_time" id="default_toast_time" value="<?php echo $time_d;?>">
 <?php }
+}
 
 add_action( 'wp_ajax_nopriv_check_new_comments_ajax_toast', 'check_new_comments_ajax_fun_toast' );
 add_action( 'wp_ajax_check_new_comments_ajax_toast', 'check_new_comments_ajax_fun_toast' );
@@ -92,7 +94,7 @@ function check_new_comments_ajax_fun_toast() {
    
     if($enable==1)
     {
-        //debugbreak();
+        
         $result=$wpdb->get_results("select post.post_title,com.comment_post_ID,com.comment_author_email,com.comment_ID from ".$wpdb->prefix."posts post,".$wpdb->prefix."comments com where 
                                 TIMESTAMPDIFF(MINUTE,comment_date_gmt,UTC_TIMESTAMP())<1 and 
                                 comment_approved = 1 and post.ID= com.comment_post_ID and com.comment_author_IP<>'".$_SERVER['REMOTE_ADDR']."' and post.post_type IN (".$in_post.")"); 
@@ -121,7 +123,7 @@ function check_new_comments_ajax_fun_toast() {
     else
     {
         echo "-2";
-        //echo "hellofghfghgfggfhgfhfgh";
+        
     }
     wp_die(); // this is required to terminate immediately and return a proper response
 }

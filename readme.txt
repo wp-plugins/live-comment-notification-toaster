@@ -1,6 +1,6 @@
 === Live Comment Notification Toaster ===
 Contributors: biztechc
-Tags: comment,notification,live comment,comment notification,comment toatser,user,user comment,user notification,WP Comments notification,live notification WP Comments
+Tags: comment,notification,live comment,comment notification,comment toatser,user,user comment,user notification,WP Comments notification,live notification WP Comments,wordpress comment,wordpress notification,wordpress live notification,wordpress comment notification
 Requires at least: 3.7
 Tested up to: 4.3
 Stable tag: 1.0.0
